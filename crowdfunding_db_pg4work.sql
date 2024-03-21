@@ -11,7 +11,7 @@ CREATE TABLE category(
 ); 
 
 -- Drop the table if it exists
-DROP TABLE if exists subcateogry;
+DROP TABLE if exists subcategory;
 
 -- Create the subcategory table
 CREATE TABLE subcategory(
@@ -53,3 +53,15 @@ CREATE TABLE campaign(
 	FOREIGN KEY (subcategory_id) REFERENCES subcategory (subcategory_id),
 	FOREIGN KEY (contact_id) REFERENCES contacts (contact_id)
 );
+
+SELECT *
+FROM contacts;
+
+SELECT *
+FROM category;
+
+SELECT *
+FROM subcategory;
+
+SELECT *
+FROM campaign; 
